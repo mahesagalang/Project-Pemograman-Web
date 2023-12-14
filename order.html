@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(img/bg-img-order.png);
+            background-size: cover;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+
+        nav {
+            display: grid;
+            width: 100vw;
+            grid-template-columns: 0.5fr 2.5fr;
+            padding: 10px 50px;
+            justify-content: center;
+            position: fixed;
+            z-index: 999;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            top: 0;
+        }
+
+        nav ul {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-evenly;
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        nav ul li a:hover {
+            transition: all 0.5s;
+            background-color: orange;
+            color: white;
+        }
+
+        nav span.hamburgermenu,
+        .closemenu {
+            display: none;
+        }
+
+        .food-menu-order {
+            margin-top: 150px;
+        }
+
+        .food-menu-order .heading-order {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .menues {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 10px;
+        }
+
+        .menues .menu {
+            justify-self: center;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: rgba(140, 140, 140, 0.2);
+            text-align: center;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            transition: all 0.2s;
+        }
+
+        .menu:hover {
+            transform: scale(0.95);
+            background-color: rgba(50, 50, 50, 0.5);
+            color: white;
+        }
+
+        .menu img {
+            border-radius: 20px;
+        }
+
+        @media screen and (max-width:700px) {
+            .heading-order {
+                backdrop-filter: blur(10px);
+                background: rgba(255, 255, 255, 0.3);
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            h2 {
+
+                font-size: 1.2em;
+            }
+
+            p {
+                font-size: .8em;
+            }
+
+            nav ul {
+                width: 50%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100vh;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                background-image: url(img/bg-img.png);
+                background-size: cover;
+                background-position: 500px;
+                z-index: 1;
+                transform: translatex(-100%);
+                transition: all 1s;
+            }
+
+            nav ul li {
+                padding: 5px;
+                border-radius: 10px;
+                backdrop-filter: blur(20px);
+                background: rgba(255, 255, 255, 0.3);
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            nav ul.slide {
+                transform: translatex(0);
+                width: 70%;
+                transition: all 1s;
+                backdrop-filter: blur(10px);
+                box-shadow: 200px 0 100px rgba(0, 0, 0, 0.5);
+            }
+
+            nav ul.close {
+                transform: translatex(-100%);
+            }
+
+            nav span.hamburgermenu {
+                align-self: center;
+                justify-self: end;
+                display: block;
+                cursor: pointer;
+            }
+
+            nav span.closemenu {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                cursor: pointer;
+            }
+
+            .menues .menu {
+                background-color: rgba(230, 230, 230, 0.8);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="logo"><img src="img/logo.jpeg" alt="" /></div>
+            <ul>
+                <span class="closemenu"><img src="aset/close.png" alt=""></span>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about-food">Tentang Makanan</a></li>
+                <li><a href="tentang-kami.html">Tentang Kami</a></li>
+                <li><a href="index.html#kontak-kami">Kontak Kami</a></li>
+            </ul>
+            <span class="hamburgermenu"><img src="aset/menu.png" alt=""></span>
+        </nav>
+        <div class="food-menu-order">
+            <span class="heading-order">
+                <h2>Nikmati Kelezatan dari Dapur Kami</h2>
+                <p>
+                    "Rasakan sentuhan khas dari resep tradisional <br />
+                    kami yang telah terwarisi selama generasi."
+                </p>
+                <br />
+                <br />
+            </span>
+            <div class="menues">
+                <a href="https://wa.me/0895618403969?text=Halo%20saya%20ingin%20pesan%20gado%20-%20gado
+              " target="_blank" class="menu">
+                    <img src="img/menu-order-gadogado.jfif" alt="" />
+                    <h2>Gado - Gado</h2>
+
+                    <p>Kelezatan Nusantara yang Memikat Selera</p>
+                </a>
+
+                <a href="https://wa.me/0895618403969?text=Halo%20saya%20ingin%20pesan%20ketoprak" target="_blank"
+                    class="menu">
+                    <img src="img/menu-order-ketoprak.jfif" alt="" />
+                    <h2>Ketoprak</h2>
+                    <p>Kelezatan Indonesia yang Memikat Hati</p>
+                </a>
+
+                <a href="https://wa.me/0895618403969?text=Halo%20saya%20ingin%20pesan%20karedok" target="_blank"
+                    class="menu">
+                    <img src="img/menu-order-karedok.jfif" alt="" />
+                    <h2>Karedok</h2>
+                    <p>Keindahan Rasa Asli Nusantara</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let humburgerMenu = document.querySelector(".hamburgermenu");
+        let navbar = document.querySelector("nav ul");
+        let badan = document.querySelector("body");
+
+        humburgerMenu.addEventListener("click", function () {
+            navbar.classList.toggle("slide");
+            document.body.classList.toggle("transparant");
+        });
+
+        var closemenu = document.querySelector(".closemenu");
+        closemenu.addEventListener("click", function () {
+            if (navbar.classList.contains("slide")) {
+                navbar.classList.remove("slide");
+            }
+
+        })
+    </script>
+</body>
+
+</html>

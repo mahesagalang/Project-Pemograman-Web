@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: grid;
+            width: 100vw;
+            grid-template-columns: 0.5fr 2.5fr;
+            padding: 10px 50px;
+            justify-content: center;
+            position: fixed;
+            z-index: 999;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            background: rgba(255,
+                    255,
+                    255,
+                    0.3);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            top: 0;
+        }
+
+        nav ul {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-evenly;
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        nav ul li a:hover {
+            transition: all 0.5s;
+            background-color: orange;
+            color: white;
+        }
+
+        nav span.hamburgermenu,
+        .closemenu {
+            display: none;
+        }
+
+        main {
+            background-image: url(img/bg-img.png);
+            margin: 150px auto;
+            background-size: cover;
+            background-position: 100%;
+            height: 125vh;
+        }
+
+        main section {
+            width: 50%;
+            margin: auto;
+            backdrop-filter: blur(10px);
+            background: rgba(255,
+                    255,
+                    255,
+                    0.3);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+            padding: 50px;
+        }
+
+        main section img {
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo"><img src="img/logo.jpeg" alt="" /></div>
+            <ul>
+                <span class="closemenu"><img src="aset/close.png" alt="" /></span>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="order.html">Menu</a></li>
+                <li><a href="index.html#about-food">Tentang Makanan</a></li>
+                <li><a href="index.html#kontak-kami">Kontak Kami</a></li>
+            </ul>
+            <span class="hamburgermenu"><img src="aset/menu.png" alt="" /></span>
+        </nav>
+
+        <main>
+            <section>
+                <h2 align="center">TENTANG KAMI</h2>
+                <img src="img/food-stand.png" alt="" />
+                <p>
+                    Selamat datang di Warung Bu Bawon, sebuah tempat istimewa di pinggir
+                    jalan Jakarta yang menawarkan pengalaman kuliner autentik dengan
+                    cita rasa khas Indonesia. Di sini, kami dengan bangga
+                    mempersembahkan hidangan gado-gado, ketoprak, dan karedok, sebagai
+                    bagian dari warisan kuliner yang kami jaga dan teruskan dari
+                    generasi ke generasi. Warung Bu Bawon terletak di lokasi yang
+                    strategis, di tengah keramaian Jakarta, menjadi oase bagi para
+                    pecinta kuliner yang mencari cita rasa yang tulus dan otentik. Kami
+                    berusaha menciptakan suasana yang ramah dan hangat, sehingga setiap
+                    pelanggan merasa seperti berkunjung ke rumah sendiri. Gado-gado kami
+                    disajikan dengan bumbu kacang yang khas, melibatkan sayuran segar,
+                    tahu, tempe, dan telur rebus untuk menciptakan perpaduan rasa yang
+                    luar biasa. Ketoprak kami menyuguhkan ketupat, bihun, tahu, dan
+                    taoge yang disiram dengan bumbu kacang lezat, sementara karedok,
+                    salad segar ala Sunda, memadukan berbagai sayuran mentah yang
+                    disajikan dengan bumbu kacang yang nikmat. Di Warung Bu Bawon, kami
+                    mengutamakan bahan-bahan berkualitas tinggi dan menggunakan
+                    resep-resep tradisional yang telah teruji waktu.
+                </p>
+                <br />
+                <p>
+                    Setiap hidangan kami disiapkan dengan penuh dedikasi untuk
+                    memberikan pengalaman kuliner yang tak terlupakan bagi setiap
+                    pelanggan. Selain hidangan utama, warung kami juga menawarkan
+                    pilihan lauk dan sambal yang beragam, memungkinkan Anda untuk
+                    menyesuaikan hidangan sesuai dengan selera Anda. Harga yang
+                    terjangkau dan porsi yang cukup membuat Warung Bu Bawon menjadi
+                    tempat yang pas untuk menikmati makanan lezat tanpa harus menguras
+                    dompet. Kunjungi Warung Bu Bawon dan nikmati kelezatan cita rasa
+                    Indonesia yang terjaga keasliannya. Kami berharap dapat menjadi
+                    pilihan utama Anda ketika hasrat akan masakan tradisional Indonesia
+                    memanggil. Terima kasih telah memilih Warung Bu Bawon sebagai
+                    destinasi kuliner Anda di Jakarta.
+                </p>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
